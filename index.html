@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vet.online</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta charset="UTF-8" />
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/sign-up.css" />
+        <link rel='stylesheet' href='css/material.css'/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="js/material.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        
+        <link rel="shortcut icon" href="images/logo.png" />
+    </head>
+    <body>
+        <div id="demo-snackbar-example" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+        </div>
+        <div id="sign-up-panel">
+            <div class="overlay" onclick="closeSignUp()"></div>
+
+            <div class="modal">
+                <div id="sign-up-text">
+                    <h2 style="color: black">Cadastro</h2>
+                </div>
+                <div id='fields-sign-up'>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label-sign">
+                        <input class="mdl-textfield__input label-float" type="text" id="name-signup" autocomplete="off">
+                        <label class="mdl-textfield__label" for="name-signup">Nome</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label-sign">
+                        <input class="mdl-textfield__input sign-sample" type="text" id="email-signup" autocomplete="off">
+                        <label class="mdl-textfield__label" for="email-signup">Email</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label-sign" >
+                        <input class="mdl-textfield__input sign-sample" type="password" id="password-signup" autocomplete="off">
+                        <label class="mdl-textfield__label" for="password-signup">Senha</label>
+                    </div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label-sign">
+                        <input class="mdl-textfield__input sign-sample" type="password" id="confirm-password" autocomplete="off">
+                        <label class="mdl-textfield__label" for="confirm-password">Confirme a senha</label>
+                    </div>
+
+                </div>
+                <div id='actions-sign-up'>
+                    <button id='button-modal' onclick="closeSignUp()" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                      Cancelar
+                    </button>
+                    <button id='signUp_btn' type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                      Cadastrar
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="login-panel" style="display: block">
+            
+            <div id="row-fluid-principal">
+                <img src="./images/logo.png" id="logo">
+                <h3 id='title-screen'>Vet.online</h3>
+    
+            </div>
+    
+                <div id='row-fluid'>
+                    <div id='form-login' class= "login-form">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label label-sign">
+                                <input class="mdl-textfield__input" type="text" autocomplete="off" name="email" id="login-txt">
+                                <label class="mdl-textfield__label" for="login-txt" name="password">Login</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="label-sign">
+                            <input class="mdl-textfield__input" onkeypress="enterPress(this)" type="password" autocomplete="off" id="password-txt">
+                                <label class="mdl-textfield__label" for="password-txt">Senha</label>
+                            </div>
+                           
+                            <div id="reminder-pass">
+                                <div id="box-reminder">
+
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
+                                        <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
+                                        <span style="color: white; font-size: 14px" class="mdl-radio__label">Lembrar senha</span>
+                                    </label>
+
+                                </div>
+                                
+                                <div id="login-btn">
+                                    <span style="color: white;">Entrar</span>
+                                </div>
+                            </div>
+                            <label style="margin-top: 5%">
+                                <a type="button" onclick="openSignUp()" id='SignUp-button' class="">
+                                    <span style="color: rgb(45, 45, 250)">Cadastre-se</span>
+                                </a>
+                            </label>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <script src="js/app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+        </footer>
+
+    </body>
+</html>

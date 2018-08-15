@@ -1,0 +1,119 @@
+h1, h2, h3, h4,{
+    color: black;
+}
+#actions-sign-up{
+    padding-top: 3%;
+}
+
+#fields-sign-up{
+    display: inline;
+}
+#sign-sample{
+    color: black;
+}
+#buttons-modal{
+    text-decoration-color: black;
+    background: transparent;
+}
+
+#sign-up-text{
+    color: #DB0A5B;
+    font-family: squared;
+}
+
+#button-sign-up{
+    background: transparent;
+}
+
+#sign-up-panel{
+    display : none;
+}
+#login-panel{
+    /* some styles to position the modal at the center of the page */
+     position: absolute;
+    /*border: 1px solid white;*/
+    top: 15%;
+    left: 15%;
+    right: 50%;
+    height: 70%;
+    border-radius: 10px;
+    background: transparent;
+    text-align: center;
+    padding-bottom: 2%;
+
+    /* needed styles for the overlay */
+    z-index: 1; /* keep on top of other elements on the page */
+}
+#inputfloat{
+    color: darkgray;
+}
+
+.sign-up{
+    display: inline-block;
+    float: right;
+}
+.mdl-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+}
+
+.modal {
+    /* some styles to position the modal at the center of the page */
+ 	position: absolute;
+	top: 15%;
+	left: 30%;
+	right: 30%;
+	height: 70%;
+    border-radius: 10px;
+	background: white;
+	text-align: center;
+    padding-bottom: 2%;
+
+    /* needed styles for the overlay */
+    z-index: 10; /* keep on top of other elements on the page */
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+}
+.modal_cadastro {
+    /* some styles to position the modal at the center of the page */
+ 	position: absolute;
+	top: 7%;
+	left: 30%;
+	right: 30%;
+	height: 80%;
+    border-radius: 10px;
+	background: white;
+	text-align: center;
+    padding-bottom: 2%;
+
+    /* needed styles for the overlay */
+    z-index: 10; /* keep on top of other elements on the page */
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.5);
+}
+#actions-sign-up{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+/* Smartphones (portrait and landscape) ———– */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* Styles */
+    .modal {
+    /* some styles to position the modal at the center of the page */
+	top: 15%;
+	left: 5%;
+	right: 5%;
+    }
+
+}
+

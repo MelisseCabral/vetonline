@@ -1,0 +1,255 @@
+:root {
+    /* Color */
+    --primary_color_1: white;
+    --primary_color_2: rgba(255, 255, 255, 1);
+    --secondary_color: #f6e58d;
+    --terciary_color: #FED50B;
+    /* Angles */
+    --primary_color_deg: -0deg;
+    --secondary_color_deg: -90deg;
+    --terciary_color_deg: 0deg;
+}
+
+.primary-color {
+    background: linear-gradient(var(--secondary_color_deg), var(--secondary_color_1), var(--secondary_color_2));
+}
+
+.secondary-color {
+    color: var(--secondary_color_2);
+}
+
+.add-remove-color {
+    color: var(--add-remove-icon) !important;
+}
+
+.terciary-color {
+    background: linear-gradient(var(--terciary_color_deg), var(--terciary_color_1), var(--terciary_color_2)) !important;
+}
+
+body{
+    background: url("../images/photo3.jpeg") no-repeat;
+    background-size: cover;
+}
+#reminder-pass{
+    display: -webkit-inline-box;
+    width: 100%;
+    margin-bottom: 15%;
+}
+#avatar{
+    width: 50%;
+    margin: 25%;
+    height: auto;     
+}
+
+#title-screen{
+    color: var(--primary_color_1) !important;
+    text-align: center;
+}
+html, body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top:0;
+    left:0;
+}
+body{
+    font-size: 48px;
+
+}
+table{
+    width: 100%;
+    text-align: left;
+    left: 0;
+}
+
+ul{
+    top: 0;
+    margin-top: 0%;
+    padding-top: 0;
+    width: 20%;
+    float: left;
+}
+
+li{
+    list-style-type:none;
+    text-decoration: none;
+}
+
+footer{
+    background: #696969;
+    bottom: 0;
+    position: static;
+    width: 100%;
+}
+.demo-layout-transparent .mdl-layout__header{
+
+}
+#subtitle{
+    color: var(--primary_color_1);
+    font-size: 23px !important;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 2.7em;
+    font-weight: 100;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    color: var(--primary_color_1);
+    margin-top: -0.7em;
+    padding: 0.65em 0 0.65em 0.7em;
+
+}
+h4{
+
+    font-size: 2.7em;
+    font-weight: 100;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    color: black;
+}
+
+.left{
+    padding-top: 3%;
+}
+
+.mdl-textfield__input{
+    text-emphasis-color: var(--primary_color_1) !important;
+}
+
+.mdl-button mdl-js-button mdl-button--raised mdl-button--colored{
+    color: var(--primary_color_1) !important;
+}
+#row-fluid{
+    width: 50%;
+    top: 40%;
+    margin-left: 25%;
+    position: absolute;
+}
+
+#btnLogin{
+    float: right;
+}
+
+.label-sign{
+    color: var(--primary_color_1) !important;
+    }
+#login-txt{
+    color: var(--primary_color_1);
+}#password-txt{
+    color: var(--primary_color_1);
+}
+#row-fluid-principal{
+    display:inline-table;
+    width: 100%;
+}
+.mdl-textfield{
+    width: 200%;
+}
+
+#brand-name{
+    color: var(--primary_color_1);
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    left: 0;
+    top: 40%;
+    right: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 2.7em;
+    font-weight: 100;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    margin-top: -0.7em;
+    padding: 5% 0 3% 0.7em;
+
+}
+
+#brand{
+    width: 100%;
+    display: inline;
+}
+
+.icon{
+    position: absolute;
+    display: inline-block;
+    left: 43%;
+    top: 20%;
+    width: 14%;
+}
+
+.button-personal{
+    border: var(--primary_color_1);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+#footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#logo{
+    height: 10vh;
+    margin-top: 5vh;
+}
+.mdl-button--raised.mdl-button--colored{
+    color: var(--primary_color_1) !important;
+}
+
+/* Smartphones (portrait and landscape) ———– */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    /* Styles */
+    body{
+        font-size: 24px !important;
+    }
+    .icon{
+        width: 36%;
+        left: 34%;
+    }
+
+    #row-fluid{
+        width: 60%;
+        top: 40%;
+        position: absolute;
+        margin-left: 20%;
+    }
+    #btnLogin{
+        float: right;
+        right: 0;
+        width: 10%;
+    }
+    #login-btn{
+        width: 40%;
+        margin-left: 10%;
+        height: 2em;
+        border-radius: 20px;
+        padding-top: 0.5em;
+        border: 1px solid white;
+    }
+    #login-panel{
+        width: 80%;
+        left: 10% !important;
+    }
+    #label-sign{
+        width: 100%;
+        font-size: 35px;
+    }
+    .mdl-textfield__input{
+        font-size: 24px !important;
+    }
+    .mdl-textfield__label{
+        font-size: 24px !important;
+    }
+    #login-btn{
+        font-size: 24px !important;
+        height: 4vh
+    }
+    .mdl-layout__header {
+        display: flex !important;
+        background: #b3d4fc
+    }
+}
